@@ -36,15 +36,11 @@ dic = {'fruit': 'test', 'color': 'green'}
 
 
 def longest_value(dic):
-    size = len(dic)
-    it = list(dic.values())
-    i = 0
-    for i in range(len(it)):
+    for i in range(len(dic.values())):
         if len(it[i]) > len(it[i + 1]):
             w_len_max = it[i]
-        else:
-            w_len_max = it[i + 1]
-        return w_len_max
+        w_len_max = it[i + 1]
+    return w_len_max
 
 
 print(f"The longest value of the chain in input is the word : {longest_value(dic)}")
