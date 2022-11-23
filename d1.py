@@ -36,10 +36,10 @@ dic = {'fruit': 'test', 'color': 'green'}
 
 
 def longest_value(dic):
+    w_len_max = ""
     for i in range(len(dic.values())):
-        if len(it[i]) > len(it[i + 1]):
-            w_len_max = it[i]
-        w_len_max = it[i + 1]
+        if len(i) > len(w_len_max):
+            w_len_max = i
     return w_len_max
 
 
