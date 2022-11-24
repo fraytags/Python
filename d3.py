@@ -39,11 +39,11 @@ a = ()
 
 
 def check_up_and_sort(names):
-    dic = []
+    arr = []
     for i in range(len(names)):
         if names[i].islower():
-            dic.append(names[i])
-    return tuple(dic)
+            arr.append(names[i])
+    return tuple(arr)
 
 
 print(check_up_and_sort(names))
