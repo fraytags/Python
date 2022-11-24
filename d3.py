@@ -17,7 +17,7 @@ def register_check(d_1):
         if el == "yes":
             students[e] = el
             i = i + 1
-    print(f"Il y a {i} personnes presentes")
+    print(f"There are {i} students")
     return students
 
 
@@ -33,3 +33,17 @@ lowercase letters. Your tuple should have names sorted
 alphabetically in descending order. Using the list above, your
 code should return:
 ('kerry', 'dickson', 'carol', 'adam')"""
+
+names = ["kerry", "dickson", "John", "Mary", "carol", "Rose", "adam"]
+a = ()
+
+
+def check_up_and_sort(names):
+    dic = []
+    for i in range(len(names)):
+        if names[i].islower():
+            dic.append(names[i])
+    return tuple(dic)
+
+
+print(check_up_and_sort(names))
