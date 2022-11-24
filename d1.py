@@ -12,14 +12,13 @@ should return 3.16 as the square root.
 
 def divide_or_square(number):
     # a number is divisible by 5 if the result of the division ends with 0 or 5.
-    res = str(number / 5)
+    res = number % 5
     # We check if the chain ends with 0 or 5 = is divisible by 5
-    if res.endswith(str(0)) or res.endswith(str(5)):
+    if != res:
         res = sqrt(number)
-        return res
-    else:
-        res = number % 5
-        return res
+
+    res = number % 5
+    return res
 
 
 print(divide_or_square(25))

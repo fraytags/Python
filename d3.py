@@ -1,5 +1,3 @@
-
-
 """Write a function called register_check that checks how many
 students are in school. The function takes a dictionary as a
 parameter. If the student is in school, the dictionary says ‘yes’. If
@@ -9,11 +7,22 @@ dictionary below. Your function should return 3.
 register = {'Michael':'yes','John': 'no',
 'Peter':'yes', 'Mary': 'yes'}"""
 
+"""Function that checks if a student is present, from a list"""
 
 
+def register_check(d_1):
+    i = 0
+    students = {}
+    for e, el in d_1.items():
+        if el == "yes":
+            students[e] = el
+            i = i + 1
+    print(f"Il y a {i} personnes presentes")
+    return students
 
 
-
+my_dic = {'Michael': 'yes', 'John': 'no', 'Peter': 'yes', 'Mary': 'yes', 'Tiphaine': 'yes'}
+register_check(my_dic)
 
 """names = ["kerry", "dickson", "John", "Mary",
 "carol", "Rose", "adam"]
