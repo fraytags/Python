@@ -17,8 +17,7 @@ def register_check(d_1):
         if el == "yes":
             students[e] = el
             i = i + 1
-    print(f"There are {i} students")
-    return students
+    return i
 
 
 my_dic = {'Michael': 'yes', 'John': 'no', 'Peter': 'yes', 'Mary': 'yes', 'Tiphaine': 'yes'}

@@ -6,6 +6,15 @@ The function should return the price after the discount. For
 example, if the user enters 150 as price and 15% as the discount,
 your function should return 127.5."""
 
+
+def my_discount():
+    price = float(input("Please enter the price of the article : "))
+    discount = float(input("Please enter the discount : "))
+    discount = discount / 100
+    result = price - (price * discount)
+    print(f"The result is : {result}")
+
+
 """ Extra Challenge: Tuple of Student Sex
 You work for a school and your boss wants to know how many
 female and male students are enrolled in the school. The school
@@ -17,3 +26,21 @@ students = ['Male', 'Female', 'female', 'male', 'male', 'male',
 Your code should return a list of tuples. The list above should
 return:
 [(‘Male’,7), (‘female’,6)]"""
+
+
+def student_sex(student_list):
+    m = 0
+    f = 0
+    for i in range(len(students)):
+        if students[i].lower() == "male":
+            m += 1
+        if students[i].lower() == "female":
+            f += 1
+    return tuple('Male',m,("female"),f)
+
+def creating_tuple():
+
+
+students = ['Male', 'Female', 'female', 'male', 'male', 'male', 'female', 'male', 'Female', 'Male', 'Female', 'Male',
+            'female']
+print(student_sex(students))
